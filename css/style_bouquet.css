@@ -1,8 +1,3 @@
-.bouquet_main {
-    /* padding: 50px auto; */
-}
-
-
 /* --------------------bouquet_aside-------------------- */
 
 .aside_list {
@@ -41,6 +36,11 @@
 
 .list_link:hover {
     color: #85603F;
+}
+
+.list_link_now:hover {
+    color: #85603F;
+    background-color: rgba(176, 125, 49, 30%);
 }
 
 .bouquet_line {
