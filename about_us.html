@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style_home.css">
     <link rel="stylesheet" type="text/css" href="./css/style_about_us.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="nav_item">
-                            <a class="nav_link" href="./bouquet.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">花品選購</a>
+                            <a class="nav_link" href="./bouquet.html">花品選購</a>
                             <ul class="nav_sublist" aria-labelledby="navbarDropdown">
 
                                 <div class="nav_sublist_part">
@@ -123,24 +123,22 @@
             </div>
             <div class="about_us row">
                 <div class=" col-lg-6 col-sm-12">
-                    <img src="./image/about_us_2.png" alt="about_us" class="about_us_img">
+                    <img src="./image/about_us_2.png" alt="about_us" class="about_us_img wow animate__animated animate__fadeInLeft">
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <div class="about_us_info">
-                        <!-- <h2 class="about_title">維多利亞花坊</h2> -->
+                    <div class="about_us_info wow animate__animated animate__fadeInRight" data-wow-delay="0.5s">
                         <p class="about_text">維多利亞花坊，位於台中市南屯區大墩四街293號，致力於各式花藝設計，提供花束．盆花．花籃．盆景．花禮，以及專業的會場布置服務。</p>
                         <p class="about_text">一直以來，我們秉持著顧客至上的精神，希望能以細膩的心思以及高水準設計，展現出送禮者的每一份心意。 </p>
                     </div>
                 </div>
-            </div>
-            <div class="about_us row">
-                <div class=" col-lg-6 col-sm-12">
-                    <img src="./image/about_us_3.png" alt="about_us" class="about_us_img">
+                <div class="about_us row">
+                    <div class=" col-lg-6 col-sm-12">
+                        <img src="./image/about_us_3.png" alt="about_us" class="about_us_img wow animate__animated animate__fadeInBottomLeft" data-wow-delay="0.5s">
+                    </div>
+                    <div class=" col-lg-6 col-sm-12">
+                        <img src="./image/about_us_4.png" alt="about_us" class="about_us_img wow animate__animated animate__fadeInBottomRight" data-wow-delay="0.5s">
+                    </div>
                 </div>
-                <div class=" col-lg-6 col-sm-12">
-                    <img src="./image/about_us_4.png" alt="about_us" class="about_us_img">
-                </div>
-            </div>
         </main>
 
 
@@ -173,10 +171,12 @@
 
             <p class="copyright">Copyright © 維多利亞花坊 All Rights Reserved.</p>
         </footer>
-    </div>
+        </div>
 
-    <script src="./js/jQuery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jQuery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/wow.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>
