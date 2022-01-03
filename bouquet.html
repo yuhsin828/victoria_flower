@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style_home.css">
     <link rel="stylesheet" type="text/css" href="./css/style_bouquet.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,182 +17,280 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <!--logo-->
-            <a href="./index.html" class="header_logo">
-                <img src="./image/Victoria_logo.png" alt="Victoria_logo" class="logo">
-            </a>
-            <!--nav-->
-            <ul class="nav_list">
-                <li class="nav_item">
-                    <a href="./about_us.html" class="nav_link">關於我們</a>
-                </li>
-                <li class="nav_item">
-                    <a href="./bouquet.html" class="nav_link_now">花品選購</a>
-                    <ul class="nav_sublist">
-                        <div class="nav_sublist_part">
-                            <li class="sublist_item">
-                                <div class="sublist_link_title">花藝設計</div>
-                            </li>
-                            <li class="sublist_item"><a href="./bouquet.html" class="sublist_link">精美花束</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">造型盆花</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">藝術花籃</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">乾燥永生</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">盆栽盆景</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">婚禮用花</a></li>
-                        </div>
+    <div class="containerr">
+        <!-- nav -->
+        <nav class="header navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-lg">
+                <a class="navbar-brand" href="index.html"><img src="./image/Victoria_logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <div class="nav_sublist_part">
-                            <li class="sublist_item">
-                                <div class="sublist_link_title">場合選花</div>
-                            </li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">開幕喬遷</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">求婚告白</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">生日祝福</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">畢業花禮</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">婚宴花禮</a></li>
-                            <li class="sublist_item"><a href="#" class="sublist_link">追思弔唁</a></li>
-                        </div>
+                    <ul class="nav_list navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav_item">
+                            <a class="nav_link" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="./about_us.html">關於我們</a>
+                        </li>
 
+                        <li class="nav_item">
+                            <a class="nav_link nav_link_now" aria-current="page" href="./bouquet.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">花品選購</a>
+                            <ul class="nav_sublist" aria-labelledby="navbarDropdown">
+
+                                <div class="nav_sublist_part">
+                                    <li class="sublist_item">
+                                        <div class="sublist_link_title">花藝設計</div>
+                                    </li>
+                                    <li class="sublist_item"><a href="./bouquet.html" class="sublist_link">精美花束</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">造型盆花</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">藝術花籃</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">乾燥永生</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">盆栽盆景</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">婚禮用花</a></li>
+                                </div>
+
+                                <div class="nav_sublist_part">
+                                    <li class="sublist_item">
+                                        <div class="sublist_link_title">場合選花</div>
+                                    </li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">開幕喬遷</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">求婚告白</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">生日祝福</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">畢業花禮</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">婚宴花禮</a></li>
+                                    <li class="sublist_item"><a href="#" class="sublist_link">追思弔唁</a></li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="nav_item">
+                            <a class="nav_link" href="#">訂購指南</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="#">會員專區</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="#">聯絡我們</a>
+                        </li>
+                        <!-- <div class="nav_icon"> -->
+                        <a href="#" class="icon_search nav_item">
+                            <img src="./image/icon_search.svg" alt="search">
+                        </a>
+                        <a href="#" class="icon_shopping_list nav_item">
+                            <img src="./image/icon_shopping_list.svg" alt="shopping">
+                        </a>
+                        <!-- </div> -->
                     </ul>
-
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">訂購指南</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">會員專區</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">聯絡我們</a>
-                </li>
-            </ul>
-
-            <div class="nav_icon">
-                <a href="#" class="icon_search">
-                    <img src="./image/icon_search.svg" alt="search">
-                </a>
-                <a href="#" class="icon_shopping_list">
-                    <img src="./image/icon_shopping_list.svg" alt="shopping">
-                </a>
+                </div>
             </div>
-        </header>
+        </nav>
 
-        <!--banner-->
-        <banner>
-            <!-- <img src="./image/banner.png" alt="banner" class="banner"> -->
-            <div class="banner_container"></div>
-        </banner>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/banner_1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/banner_2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/banner_3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
 
         <!--main-->
-        <main class="bouquet_main">
+        <main class="bouquet_main container">
+            <div class="row">
+                <!--aside_list-->
+                <aside class="bouquet_aside col-lg-2">
+                    <ul class="aside_list">
+                        <li class="list_title">花藝設計</li>
+                        <ul class="list_">
+                            <li class="list_item"><a href="./bouquet.html" class="list_link_now">精美花束</a></li>
+                            <li class="list_item"><a href="#" class="list_link">造型盆花</a></li>
+                            <li class="list_item"><a href="#" class="list_link">藝術花籃</a></li>
+                            <li class="list_item"><a href="#" class="list_link">乾燥永生</a></li>
+                            <li class="list_item"><a href="#" class="list_link">盆栽盆景</a></li>
+                            <li class="list_item"><a href="#" class="list_link">婚禮用花</a></li>
+                        </ul>
 
-            <!--aside_list-->
-            <aside class="bouquet_aside">
-                <ul class="aside_list">
-                    <li class="list_title">花藝設計</li>
-                    <ul class="list_">
-                        <li class="list_item"><a href="./bouquet.html" class="list_link_now">精美花束</a></li>
-                        <li class="list_item"><a href="#" class="list_link">造型盆花</a></li>
-                        <li class="list_item"><a href="#" class="list_link">藝術花籃</a></li>
-                        <li class="list_item"><a href="#" class="list_link">乾燥永生</a></li>
-                        <li class="list_item"><a href="#" class="list_link">盆栽盆景</a></li>
-                        <li class="list_item"><a href="#" class="list_link">婚禮用花</a></li>
+                        <li class="list_title">場合選花</li>
+                        <ul class="list_">
+                            <li class="list_item"><a href="#" class="list_link">開幕喬遷</a></li>
+                            <li class="list_item"><a href="#" class="list_link">求婚告白</a></li>
+                            <li class="list_item"><a href="#" class="list_link">生日祝福</a></li>
+                            <li class="list_item"><a href="#" class="list_link">畢業花禮</a></li>
+                            <li class="list_item"><a href="#" class="list_link">婚宴花禮</a></li>
+                            <li class="list_item"><a href="#" class="list_link">追思弔唁</a></li>
+                        </ul>
+
                     </ul>
+                </aside>
 
-                    <li class="list_title">場合選花</li>
-                    <ul class="list_">
-                        <li class="list_item"><a href="#" class="list_link">開幕喬遷</a></li>
-                        <li class="list_item"><a href="#" class="list_link">求婚告白</a></li>
-                        <li class="list_item"><a href="#" class="list_link">生日祝福</a></li>
-                        <li class="list_item"><a href="#" class="list_link">畢業花禮</a></li>
-                        <li class="list_item"><a href="#" class="list_link">婚宴花禮</a></li>
-                        <li class="list_item"><a href="#" class="list_link">追思弔唁</a></li>
-                    </ul>
-
-                </ul>
-            </aside>
-
-            <!--bouquet_menu-->
-            <article class="bouquet_menu">
-                <h2 class="main_title">精美花束</h2>
-                <div class="bouquet_menu_list">
-
-                    <!-- 向日葵花束-->
-                    <div class="menu_item">
-                        <a href="#" class="item_link">
-                            <img src="./image/bouquet_1.png" alt="bouquet_1" class="item_img">
-                            <div class="item_name">向日葵花束</div>
-                            <div class="flex">
-                                <p class="item_price">$900</p>
-                                <img src="./image/icon_shopping.svg" alt="put it into shopping list" class="item_buy">
-                            </div>
-                        </a>
-                    </div>
-
-                    <!--康乃馨花束-->
-                    <div class="menu_item">
-                        <a href="#" class="item_link">
-                            <img src="./image/bouquet_2.png" alt="bouquet_2" class="item_img">
-                            <div class="item_name">康乃馨花束</div>
-                            <div class="flex">
-                                <p class="item_price">$1080</p>
-                                <img src="./image/icon_shopping.svg" alt="put it into shopping list" class="item_buy">
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- 白玫瑰花束-->
-                    <div class="menu_item">
-                        <a href="#" class="item_link">
-                            <img src="./image/bouquet_3.png" alt="bouquet_3" class="item_img">
-                            <div class="item_name">白玫瑰花束</div>
-                            <div class="flex">
-                                <p class="item_price">$980</p>
-                                <img src="./image/icon_shopping.svg" alt="put it into shopping list" class="item_buy">
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- 熱帶花束-->
-                    <div class="menu_item">
-                        <a href="#" class="item_link">
-                            <img src="./image/bouquet_4.png" alt="bouquet_4" class="item_img">
-                            <div class="item_name">熱帶花束</div>
-                            <div class="flex">
-                                <p class="item_price">$700</p>
-                                <img src="./image/icon_shopping.svg" alt="put it into shopping list" class="item_buy">
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- 牡丹花束-->
-                    <div class="menu_item">
-                        <a href="#" class="item_link">
-                            <img src="./image/bouquet_5.png" alt="bouquet_5" class="item_img">
-                            <div class="item_name">牡丹花束</div>
-                            <div class="flex">
-                                <p class="item_price">$1590</p>
-                                <img src="./image/icon_shopping.svg" alt="put it into shopping list" class="item_buy">
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- 向日葵花束-->
-                    <div class="menu_item">
-                        <a href="#" class="item_link">
-                            <img src="./image/bouquet_6.png" alt="bouquet_6" class="item_img">
-                            <div class="item_name">向日葵花束</div>
-                            <div class="flex">
-                                <p class="item_price">$1200</p>
-                                <img src="./image/icon_shopping.svg" alt="put it into shopping list" class="item_buy">
-                            </div>
-                        </a>
-                    </div>
+                <div class="col-lg-1">
+                    <div class="bouquet_line"></div>
                 </div>
-            </article>
 
+                <!--bouquet_menu-->
+                <article class="bouquet_menu col-lg-9 container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="main_title">精美花束</h2>
+                        </div>
+                    </div>
+                    <div class="bouquet_menu_list row">
+                        <!-- 向日葵花束-->
+                        <div class="menu_item col-lg-3 col-sm-6">
+                            <a href="#" class="item_link container">
+                                <div class="row">
+                                    <img src="./image/bouquet_1.png" alt="bouquet_1" class="item_img col">
+                                </div>
+                                <div class="item_name row">
+                                    <div class="col">向日葵花束</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item_price">$900</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="item_buy">
+                                            <img src="./image/icon_shopping.svg" alt="put it into shopping list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--康乃馨花束-->
+                        <div class="menu_item col-lg-3 col-sm-6">
+                            <a href="#" class="item_link container">
+                                <div class="row">
+                                    <img src="./image/bouquet_2.png" alt="bouquet_2" class="item_img col">
+                                </div>
+                                <div class="item_name row">
+                                    <div class="col">康乃馨花束</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item_price">$1080</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="item_buy">
+                                            <img src="./image/icon_shopping.svg" alt="put it into shopping list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 白玫瑰花束-->
+                        <div class="menu_item col-lg-3 col-sm-6">
+                            <a href="#" class="item_link container">
+                                <div class="row">
+                                    <img src="./image/bouquet_3.png" alt="bouquet_3" class="item_img col">
+                                </div>
+                                <div class="item_name row">
+                                    <div class="col">白玫瑰花束</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item_price">$980</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="item_buy">
+                                            <img src="./image/icon_shopping.svg" alt="put it into shopping list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 熱帶花束-->
+                        <div class="menu_item col-lg-3 col-sm-6">
+                            <a href="#" class="item_link container">
+                                <div class="row">
+                                    <img src="./image/bouquet_4.png" alt="bouquet_4" class="item_img col">
+                                </div>
+                                <div class="item_name row">
+                                    <div class="col">熱帶花束</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item_price">$700</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="item_buy">
+                                            <img src="./image/icon_shopping.svg" alt="put it into shopping list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 牡丹花束-->
+                        <div class="menu_item col-lg-3 col-sm-6">
+                            <a href="#" class="item_link container">
+                                <div class="row">
+                                    <img src="./image/bouquet_5.png" alt="bouquet_5" class="item_img col">
+                                </div>
+                                <div class="item_name row">
+                                    <div class="col">牡丹花束</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item_price">$1590</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="item_buy">
+                                            <img src="./image/icon_shopping.svg" alt="put it into shopping list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 向日葵花束-->
+                        <div class="menu_item col-lg-3 col-sm-6">
+                            <a href="#" class="item_link container">
+                                <div class="row">
+                                    <img src="./image/bouquet_6.png" alt="bouquet_6" class="item_img col">
+                                </div>
+                                <div class="item_name row">
+                                    <div class="col">向日葵花束</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item_price">$1200</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="item_buy">
+                                            <img src="./image/icon_shopping.svg" alt="put it into shopping list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </main>
 
 
@@ -225,6 +324,9 @@
             <p class="copyright">Copyright © 維多利亞花坊 All Rights Reserved.</p>
         </footer>
     </div>
+
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
