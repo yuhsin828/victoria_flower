@@ -16,17 +16,7 @@
 
 .about_us_img {
     width: 100%;
+    height: auto;
     margin: 20px;
     text-align: center;
 }
-
-
-/* .about_us_info:hover {
-    transform: scale(1.05);
-}
-
-.about_us_img:hover {
-    border-radius: 10px;
-    transform: scale(1.05);
-    filter: brightness(0.8);
-} */
