@@ -304,6 +304,7 @@ a {
 
 .footerr {
     background-color: #85603F;
+    margin-top: 20px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
