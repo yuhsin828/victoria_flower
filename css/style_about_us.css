@@ -20,3 +20,9 @@
     margin: 20px;
     text-align: center;
 }
+
+@media only screen and (max-width: 576px) {
+    .about_us_info {
+        padding: 0;
+    }
+}

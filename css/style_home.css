@@ -33,9 +33,9 @@ a {
 /*----------------------------------------header & nav----------------------------------------*/
 
 .header {
-    background-color: #FEFEFE;
+    background-color: #FEFEFE !important;
     border-bottom: solid #B07D31 2px;
-    /* opacity: 50%; */
+    padding: 0 !important;
 }
 
 
@@ -78,7 +78,7 @@ a {
     list-style: none;
     background-color: rgba(254, 254, 254, 80%);
     border-top: none;
-    width: 12em;
+    width: 240px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -90,12 +90,12 @@ a {
 
 .sublist_link_title {
     color: #85603F;
-    padding-bottom: 0.5em;
+    padding-bottom: 5px;
     border-bottom: solid #85603F 2px;
 }
 
 .sublist_link {
-    padding: 0.5em;
+    padding: 5px;
     color: #B07D31;
 }
 
@@ -103,8 +103,14 @@ a {
     display: block;
 }
 
+@media only screen and (max-width: 992px) {
+    .nav_item:hover .nav_sublist {
+        display: none;
+    }
+}
+
 .nav_item:hover .nav_sublist {
-    padding: 1.3em 0 0.5em 0;
+    padding: 13px 0 5px 0;
 }
 
 .nav_item:hover>.nav_link {
@@ -124,6 +130,19 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 40px;
+} */
+
+
+/* .search {
+    display: none;
+    width: 200px;
+    border: solid 1.5px #B07D31;
+    background-color: #FEFEFE;
+}
+
+.icon_search:active .search {
+    display: block;
 } */
 
 .icon_search:hover {
@@ -131,7 +150,7 @@ a {
 }
 
 .icon_shopping_list:hover {
-    filter: drop-shadow(0px 0px 0.2px #85603F);
+    filter: drop-shadow(0px 0px 0.5px #85603F);
 }
 
 
@@ -140,7 +159,7 @@ a {
 .main_title {
     font-family: 'Noto Serif TC', serif;
     font-size: 24px;
-    font-weight: 700px;
+    font-weight: 700px !important;
     color: #85603F;
     margin: 40px 0 20px 0;
     padding-bottom: 5px;
@@ -224,14 +243,14 @@ a {
 
 .about_img {
     width: 100%;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 
 /* --------------------about info-------------------- */
 
 .about_info {
-    padding: 40px 80px !important;
+    padding: 40px 80px;
     margin: 20px 0;
     height: auto;
     background: #FFFCF0;
@@ -272,12 +291,20 @@ a {
     border: solid 2px #503310;
 }
 
+@media only screen and (max-width: 576px) {
+    .about_info {
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+}
+
 
 /*----------------------------------------footer----------------------------------------*/
 
 .footerr {
     background-color: #85603F;
-    padding-top: 20;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,7 +337,7 @@ a {
 .contact_icon {
     display: flex;
     flex-direction: row;
-    margin: 10px 0 3px 0;
+    margin: 10px 0 30px 0;
 }
 
 .copyright {
