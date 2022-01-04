@@ -68,7 +68,7 @@
 }
 
 @media (prefers-reduced-motion:no-preference) {
-    :root {
+     :root {
         scroll-behavior: smooth
     }
 }
@@ -8369,7 +8369,8 @@ fieldset:disabled .btn {
 
 .bg-light {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity))!important
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity))
+    /* !important */
 }
 
 .bg-dark {
